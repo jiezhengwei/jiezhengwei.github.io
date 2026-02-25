@@ -228,7 +228,7 @@ nav .nav-links a.current::after {
 
 .hero-photo img {
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
   aspect-ratio: 3 / 4;
   object-fit: cover;
   border-radius: 4px;
@@ -245,7 +245,7 @@ nav .nav-links a.current::after {
   top: -10px;
   right: -10px;
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
   aspect-ratio: 3 / 4;
   border: 1px solid var(--border-hover);
   border-radius: 4px;
@@ -490,6 +490,19 @@ nav .nav-links a.current::after {
   color: var(--text-muted);
   line-height: 1.7;
   max-width: 640px;
+}
+
+.research-plain .entry-title-link {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--text);
+  line-height: 1.5;
+  transition: color var(--transition);
+  display: inline-block;
+}
+.research-plain .entry-title-link:hover {
+  color: var(--accent-subtle);
 }
 
 .research-plain .entry-link {
