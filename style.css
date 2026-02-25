@@ -426,6 +426,84 @@ nav .nav-links a.current::after {
   color: var(--accent-hover);
 }
 
+/* ---------- Painting Banner ---------- */
+.painting-banner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 2rem 1rem;
+  animation: fadeIn 1s ease-out 0.4s both;
+}
+
+.painting-banner figure {
+  margin: 0;
+}
+
+.painting-banner img {
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+}
+
+.painting-banner figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-style: italic;
+  text-align: right;
+}
+
+/* ---------- Plain Research List ---------- */
+.research-plain {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 2rem 5rem;
+}
+
+.research-plain .category-title {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--accent-subtle);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-top: 2.5rem;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.research-plain .entry {
+  margin-bottom: 1.8rem;
+  padding-left: 0;
+}
+
+.research-plain .entry-title {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--text);
+  line-height: 1.5;
+  margin-bottom: 0.25rem;
+}
+
+.research-plain .entry-detail {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  max-width: 640px;
+}
+
+.research-plain .entry-link {
+  display: inline-block;
+  margin-top: 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--accent-subtle);
+  transition: color var(--transition);
+}
+.research-plain .entry-link:hover {
+  color: var(--accent-hover);
+}
+
 /* ---------- Footer ---------- */
 footer {
   border-top: 1px solid var(--border);
