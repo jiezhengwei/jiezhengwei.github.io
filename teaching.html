@@ -3,125 +3,94 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Teaching — Jiezheng Wei. Teaching assistant experience at SMU and CUHK-Shenzhen." />
-  <title>Teaching — Jiezheng's Homepage</title>
+  <meta name="description" content="Teaching — Jiezheng Wei. Teaching assistant record and course notes in econometrics, statistics, and related fields." />
+  <title>Teaching · Jiezheng Wei</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Navigation -->
   <nav>
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">J<span>.</span>Wei</a>
-      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <a href="index.html" class="nav-logo">Jiezheng Wei <span class="cn">魏杰铮</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu"
+              onclick="document.querySelector('.nav-links').classList.toggle('open')">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="research.html">Research</a></li>
         <li><a href="teaching.html" class="current">Teaching</a></li>
-        <li><a href="CV_JiezhengWei.pdf">CV</a></li>
+        <li><a href="CV_JiezhengWei_030826.pdf">CV</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Page Header -->
-  <header class="page-header fade-in">
-    <div class="section-label">Experience</div>
-    <h1 class="page-title">Teaching</h1>
-    <p class="page-desc">
-      Teaching assistant roles across econometrics, statistics, machine learning, and real estate economics.
-    </p>
-  </header>
+  <main class="academic-page">
+    <h1 class="academic-page-title">Teaching</h1>
 
-  <!-- Teaching Timeline -->
-  <div class="teaching-timeline">
+    <section class="academic-section" aria-labelledby="teaching-record-title">
+      <h2 class="academic-section-title" id="teaching-record-title">Teaching Assistant</h2>
 
-    <!-- SMU -->
-    <div class="timeline-institution fade-in">
-      <h2 class="institution-name">Singapore Management University</h2>
-
-      <div class="timeline-group">
-        <div class="timeline-period">Spring 2024</div>
-        <div class="timeline-courses">
-          <div class="timeline-course">
-            <span class="course-code">DSA305</span> Panel Data Analysis
-          </div>
-        </div>
+      <div class="teaching-group">
+        <h3>Doctoral Years</h3>
+        <ul class="course-list">
+          <li class="course-item">
+            <span class="course-term">Spring 2024</span>
+            <span><span class="course-code">DSA305</span> <span class="course-title">Panel Data Analysis</span></span>
+          </li>
+          <li class="course-item">
+            <span class="course-term">Fall 2023</span>
+            <span><span class="course-code">ECON212</span> <span class="course-title">Real Estate Economics</span></span>
+          </li>
+        </ul>
       </div>
 
-      <div class="timeline-group">
-        <div class="timeline-period">Fall 2023</div>
-        <div class="timeline-courses">
-          <div class="timeline-course">
-            <span class="course-code">ECON212</span> Real Estate Economics
-          </div>
-        </div>
+      <div class="teaching-group">
+        <h3>Master&rsquo;s Years</h3>
+        <ul class="course-list">
+          <li class="course-item">
+            <span class="course-term">Spring 2022</span>
+            <span><span class="course-code">DMS3002</span> <span class="course-title">Applied Probability and Stochastic Processes in Business</span></span>
+          </li>
+          <li class="course-item">
+            <span class="course-term">Autumn 2021</span>
+            <span><span class="course-code">ECON3080</span> <span class="course-title">Machine Learning in Business</span></span>
+          </li>
+          <li class="course-item">
+            <span class="course-term">Spring 2021</span>
+            <span><span class="course-code">ECON2121</span> <span class="course-title">Basic Statistics</span></span>
+          </li>
+          <li class="course-item">
+            <span class="course-term">Spring 2021</span>
+            <span><span class="course-code">ECON3080</span> <span class="course-title">Machine Learning in Business</span></span>
+          </li>
+          <li class="course-item">
+            <span class="course-term">Spring 2021</span>
+            <span><span class="course-code">ECO6125</span> <span class="course-title">Chinese Economic Policies and Their Effects</span></span>
+          </li>
+          <li class="course-item">
+            <span class="course-term">Fall 2020</span>
+            <span><span class="course-code">ECON6102</span> <span class="course-title">Advanced Econometrics</span></span>
+          </li>
+        </ul>
       </div>
-    </div>
+    </section>
 
-    <!-- CUHK-SZ -->
-    <div class="timeline-institution fade-in">
-      <h2 class="institution-name">The Chinese University of Hong Kong, Shenzhen</h2>
-
-      <div class="timeline-group">
-        <div class="timeline-period">Spring 2022</div>
-        <div class="timeline-courses">
-          <div class="timeline-course">
-            <span class="course-code">DMS3002</span> Applied Probability and Stochastic Processes in Business
-          </div>
-        </div>
+    <section class="academic-section" aria-labelledby="notes-title">
+      <h2 class="academic-section-title" id="notes-title">Notes</h2>
+      <div class="notes-list">
+        <article class="note-item">
+          <a class="note-title" href="Notes_Probability_Theory.pdf">Notes on Probability Theory</a>
+          <p>Measure-theoretic probability.</p>
+          <a class="document-link" href="Notes_Probability_Theory.pdf">PDF</a>
+        </article>
+        <article class="note-item">
+          <a class="note-title" href="Notes_IV.pdf">Notes for Weak IV</a>
+          <p>Mainly focus on weak identification.</p>
+          <a class="document-link" href="Notes_IV.pdf">PDF</a>
+        </article>
       </div>
-
-      <div class="timeline-group">
-        <div class="timeline-period">Autumn 2021</div>
-        <div class="timeline-courses">
-          <div class="timeline-course">
-            <span class="course-code">ECON3080</span> Machine Learning in Business
-          </div>
-        </div>
-      </div>
-
-      <div class="timeline-group">
-        <div class="timeline-period">Spring 2021</div>
-        <div class="timeline-courses">
-          <div class="timeline-course">
-            <span class="course-code">ECON2121</span> Basic Statistics
-          </div>
-          <div class="timeline-course">
-            <span class="course-code">ECON3080</span> Machine Learning in Business
-          </div>
-          <div class="timeline-course">
-            <span class="course-code">ECO6125</span> Chinese Economic Policies and Their Effects
-          </div>
-        </div>
-      </div>
-
-      <div class="timeline-group">
-        <div class="timeline-period">Fall 2020</div>
-        <div class="timeline-courses">
-          <div class="timeline-course">
-            <span class="course-code">ECON6102</span> Advanced Econometrics
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    <div class="footer-inner">
-      <span>&copy; 2024 Jiezheng Wei</span>
-      <a href="mailto:jzwei.2022@phdecons.smu.edu.sg">jzwei.2022@phdecons.smu.edu.sg</a>
-    </div>
-  </footer>
-
-  <script>
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-  </script>
+    </section>
+  </main>
 </body>
 </html>

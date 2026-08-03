@@ -3,69 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Research — Jiezheng Wei. Working papers and notes in econometrics and probability theory." />
-  <title>Research — Jiezheng's Homepage</title>
+  <meta name="description" content="Research — Jiezheng Wei. Working papers in econometrics and high-frequency financial data." />
+  <title>Research · Jiezheng Wei</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <nav>
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">J<span>.</span>Wei</a>
-      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <a href="index.html" class="nav-logo">Jiezheng Wei <span class="cn">魏杰铮</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu"
+              onclick="document.querySelector('.nav-links').classList.toggle('open')">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="research.html" class="current">Research</a></li>
-        <li><a href="CV_JiezhengWei.pdf">CV</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="CV_JiezhengWei_030826.pdf">CV</a></li>
       </ul>
     </div>
   </nav>
 
-  <header class="page-header fade-in">
-    <div class="section-label">Explore</div>
-    <h1 class="page-title">Research</h1>
-    <p class="page-desc">
-      Working papers, ongoing projects, and notes on econometric theory and probability.
-    </p>
-  </header>
+  <main class="academic-page">
+    <h1 class="academic-page-title">Research</h1>
 
-  <div class="research-plain">
-
-    <h2 class="category-title fade-in">Working Papers</h2>
-
-    <div class="entry fade-in">
-      <div class="entry-title">Coming soon</div>
-      <div class="entry-detail">Papers in progress — check back for updates.</div>
-    </div>
-
-    <h2 class="category-title fade-in">Notes</h2>
-
-    <div class="entry fade-in">
-      <div class="entry-title">Notes on Probability Theory</div>
-      <a href="Notes_Probability_Theory.pdf" class="entry-link">&#8595; Download PDF</a>
-    </div>
-
-    <div class="entry fade-in">
-      <div class="entry-title">Notes for Econometric Research</div>
-      <div class="entry-detail">Reference notes and technical material.</div>
-    </div>
-
-  </div>
-
-  <footer>
-    <div class="footer-inner">
-      <span>&copy; 2024 Jiezheng Wei</span>
-      <a href="mailto:jzwei.2022@phdecons.smu.edu.sg">jzwei.2022@phdecons.smu.edu.sg</a>
-    </div>
-  </footer>
-
-  <script>
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-  </script>
+    <section class="academic-section" aria-labelledby="working-papers-title">
+      <h2 class="academic-section-title" id="working-papers-title">Working Papers and Work-in-Progress</h2>
+      <ol class="paper-list">
+        <li class="paper-item">
+          <a class="paper-title" href="working_papers/news-jump_regressions_weakid.pdf">
+            News-Jump Regressions: Weak Identification and Robust Inferences
+          </a>
+          <p class="paper-authors">with Jia Li</p>
+          <a class="document-link" href="working_papers/news-jump_regressions_weakid.pdf">PDF</a>
+        </li>
+        <li class="paper-item">
+          <a class="paper-title" href="working_papers/fixed-k_bipower_jump_test.pdf">
+            A Fixed-<em>k</em> Bipower Jump Test
+          </a>
+          <p class="paper-authors">with Jia Li, Qiyuan Li</p>
+          <a class="document-link" href="working_papers/fixed-k_bipower_jump_test.pdf">PDF</a>
+        </li>
+      </ol>
+    </section>
+  </main>
 </body>
 </html>

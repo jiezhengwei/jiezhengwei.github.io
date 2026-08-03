@@ -3,104 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Jiezheng Wei — PhD student in Economics at Singapore Management University. Research in econometrics." />
-  <title>Jiezheng's Homepage</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Jiezheng Wei — Ph.D. candidate in Economics at Singapore Management University. Research in Econometrics and AI Applications in Economics." />
+  <title>Jiezheng Wei · Econometrics</title>
+  <link rel="stylesheet" href="style.css?v=20260803" />
 </head>
 <body>
 
   <nav>
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">J<span>.</span>Wei</a>
-      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <a href="index.html" class="nav-logo">Jiezheng Wei <span class="cn">魏杰铮</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu"
+              onclick="document.querySelector('.nav-links').classList.toggle('open')">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links">
         <li><a href="index.html" class="current">Home</a></li>
         <li><a href="research.html">Research</a></li>
-        <li><a href="CV_JiezhengWei.pdf">CV</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="CV_JiezhengWei_030826.pdf">CV</a></li>
       </ul>
     </div>
   </nav>
 
   <section class="hero">
     <div class="hero-inner">
-      <div class="hero-text">
-        <div class="hero-greeting">Welcome</div>
-        <h1 class="hero-name">Jiezheng<br/><em>Wei</em></h1>
-        <p class="hero-subtitle">
-          PhD student in Economics at Singapore Management University, researching econometrics.
-          Born in Chibi, Xianning, Hubei — shaped by curiosity, driven by rigour.
-        </p>
-        <div class="hero-meta">
-          <div class="hero-meta-item">
-            <span class="label">Affiliation</span>
-            <span><a href="https://economics.smu.edu.sg/">SOE, SMU</a></span>
-          </div>
-          <div class="hero-meta-item">
-            <span class="label">Focus</span>
-            <span>Econometrics</span>
-          </div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-name">Jiezheng Wei</h1>
+
+        </div>
+
+        <div class="intro-copy" aria-label="Biography">
+          <p>
+            I am a final-year Ph.D. candidate in Economics in the
+            <a href="https://economics.smu.edu.sg/">School of Economics</a> at
+            <a href="https://www.smu.edu.sg/">Singapore Management University</a>.
+            My research interests lie in Econometrics and AI Applications in Economics.
+          </p>
+
+          <p>
+            My current work mainly studies high-frequency and AI analysis for monetary policy shocks.
+          </p>
+
+          <p class="intro-market">
+            I am on the 2026&ndash;2027 Economics Job Market and available for
+            interviews.
+          </p>
+
+          <p class="intro-contact">
+            You can reach me at
+            <a href="mailto:jzwei.2022@phdecons.smu.edu.sg">jzwei.2022@phdecons.smu.edu.sg</a>.
+          </p>
         </div>
       </div>
+
       <div class="hero-photo">
-        <img src="jiezheng_shenzhen2022.jpeg" alt="Jiezheng Wei" />
+        <img src="Aug_2_26_2.jpg" alt="Portrait of Jiezheng Wei" />
       </div>
     </div>
   </section>
 
-  <!-- Van Gogh Painting -->
-  <div class="painting-banner">
-    <figure>
-      <img src="vangogh_wheatfield.jpg" alt="Vincent van Gogh — Wheatfield Under Thunderclouds, 1890" />
-      <figcaption>Vincent van Gogh, <em>Wheatfield Under Thunderclouds</em>, 1890 &mdash; Van Gogh Museum, Amsterdam</figcaption>
-    </figure>
-  </div>
-
-  <section class="section fade-in">
-    <div class="section-label">About</div>
-    <h2 class="section-title">Background</h2>
-    <div class="divider"></div>
-    <p style="max-width:660px; color: var(--text-muted); line-height:1.8; font-size:0.93rem;">
-      I completed my secondary education at Wugang No.3 High School in Wuhan, then earned my undergraduate degree from
-      <a href="https://cema.cufe.edu.cn/">CEMA</a>,
-      <a href="https://en.cufe.edu.cn/">Central University of Finance and Economics</a>
-      and a Master's degree from
-      <a href="https://www.cuhk.edu.cn/en">The Chinese University of Hong Kong, Shenzhen</a>.
-      Currently pursuing a PhD at the
-      <a href="https://economics.smu.edu.sg/">School of Economics</a>,
-      <a href="https://www.smu.edu.sg/">Singapore Management University</a>.
-    </p>
-  </section>
-
-  <section class="section fade-in">
-    <div class="section-label">Get in touch</div>
-    <h2 class="section-title">Contact</h2>
-    <div class="divider"></div>
-    <div class="info-grid">
-      <div class="info-card">
-        <div class="card-label">Email</div>
-        <div class="card-value"><a href="mailto:jzwei.2022@phdecons.smu.edu.sg">jzwei.2022@phdecons.smu.edu.sg</a></div>
-      </div>
-      <div class="info-card">
-        <div class="card-label">Address</div>
-        <div class="card-value">90 Stamford Rd, Singapore 178903</div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="footer-inner">
-      <span>&copy; 2024 Jiezheng Wei</span>
-      <a href="mailto:jzwei.2022@phdecons.smu.edu.sg">jzwei.2022@phdecons.smu.edu.sg</a>
-    </div>
-  </footer>
-
-  <script>
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-  </script>
 </body>
 </html>
